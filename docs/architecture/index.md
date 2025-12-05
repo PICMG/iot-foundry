@@ -351,10 +351,10 @@ The third component is the Control and Monitoring Function, which interfaces dir
 
 The PDRs used by the PLDM server are central to this architecture. They define the structure, types, and relationships of all manageable entities on the microcontroller. For industrial control applications, the PICMG IoT.1 IoT Firmware Specification provides detailed guidance on how to construct and interpret PDRs for sensors, effecters, and control domains. This includes standardized formats for sensors, digital outputs, analog inputs, and more, enabling interoperability across vendors and platforms. By adhering to IoT.1, the microcontroller can expose its capabilities in a way that is immediately usable by compliant PLDM clients and management systems.
 
-[image1]: /images/image1.png
-[image2]: /images/image2.png
-[image3]: /images/image3.png
-[image4]: /images/image4.png
-[image5]: /images/image5.png
-[image6]: /images/image6.png
+[image1]: {{ '/assets/images/architecture/image1.png' | relative_url }}
+[image2]: {{ '/assets/images/architecture/image2.png' | relative_url }}
+[image3]: {{ '/assets/images/architecture/image3.png' | relative_url }}
+[image4]: {{ '/assets/images/architecture/image4.png' | relative_url }}
+[image5]: {{ '/assets/images/architecture/image5.png' | relative_url }}
+[image6]: {{ '/assets/images/architecture/image6.png' | relative_url }}
 
