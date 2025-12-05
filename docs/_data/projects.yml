@@ -1,14 +1,26 @@
-- name: PICMG IoT Firmware
-  url: https://github.com/PICMG/iot_firmware
-  repo: PICMG/iot_firmware
-  description: Reference MCTP and PLDM firmware implementations maintained by PICMG.
-  status: reference
+- name: MCTP-Over-Serial library for Linux
+  url: https://www.github.com/PICMG/mctp-serial-linux
+  repo: PICMG/mctp-serial-linux
+  description: A Linux library and user space application to facilite rapid deployment of MCTP-Over-Serial deployments using Linux.
+  status: active
+
+- name: MCTP-Over-Serial library for Arduino
+  url: https://www.github.com/PICMG/mctp-serial-arduino
+  repo: PICMG/mctp-serial-arduino
+  description: An Arduino library for MCTP-Over-Serial.
+  status: active
 
 - name: IoTorch
   url: https://github.com/PICMG/IoTorch
   repo: PICMG/IoTorch
   description: This project will be renamed or removed and its contents will be refactored into several new projects.
   status: in progress
+
+- name: PICMG IoT Firmware
+  url: https://github.com/PICMG/iot_firmware
+  repo: PICMG/iot_firmware
+  description: Reference MCTP and PLDM firmware implementations maintained by PICMG.
+  status: reference
 
 - name: IoT Configurator
   url: https://github.com/PICMG/iot_configurator
