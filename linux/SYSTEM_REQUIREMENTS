@@ -1,0 +1,25 @@
+# Linux System Requirements
+The Management Component Transport Protocol (MCTP) was officially introduced into the Linux kernel in version 5.12, Since that time, there have been numerous patches and improvements to the mctp Linux core and modules.  For proper functioning of IoTFoundry, the following minimum Linux kernel version is required:
+
+* Linux Kernel version 6.17.11
+
+Ensure your kernel has MCTP support enabled. You can check this by examining /proc/net/protocols using the following Linux shell command:
+```
+grep MCTP /proc/net/protocols
+```
+If MCTP is listed, the protocol is available and built into the kernel. 
+
+Even if your operating system is built with MCTP enabled, the serial binding module may not be loaded by default.
+You can check to see if the module is loaded by typing the following shell command:
+```
+sudo lsmod : grep mctp
+```
+If you see no MCTP modules running, you will need to load the serial module.  Fortunately, this is easy to do with the following command:
+```
+sudo modprobe mctp_serial
+```
+to make loading of the module permanent, create an mctp_serial.conf file in the modules-load.d folder by executing the following:
+```
+sudo bash -c 'echo -e "mctp_serial\n" > /etc/modules-load.d/mctp_serial.conf'
+```
+The linux system is now ready to communicate over MCTP to serial endpoints.

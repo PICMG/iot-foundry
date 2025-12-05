@@ -13,7 +13,7 @@ IoTFoundry is a series of applications and libraries for embedded microcontrolle
 - [MCTP Serial Transport Binding Specification](https://www.dmtf.org/documents/pmci/mctp-serial-transport-binding-specification-100)
 - [PLDM Specification](https://www.dmtf.org/sites/default/files/standards/documents/DSP0240_1.2.0.pdf)
 
-Together, these two specifications provide lightweight, robust transport and application-layer data communications suitable for small-scale embedded devices.
+Together, these three specifications provide lightweight, robust transport and application-layer data communications suitable for small-scale embedded devices.
 
 The first goals of this project, by phase are:
 - **Phase 1** 
