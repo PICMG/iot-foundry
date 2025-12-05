@@ -45,7 +45,9 @@
           {{ content }}
         </div>
       </div>
+      <script>window.GLOSSARY = {{ site.data.glossary | jsonify }};</script>
       <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
+      <script src="{{ '/assets/js/glossary.js' | relative_url }}"></script>
       {% else %}
       <div class="content" id="page-content">
         {{ content }}

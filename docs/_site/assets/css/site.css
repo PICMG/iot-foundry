@@ -43,7 +43,9 @@ body{
 .main-nav a:hover{color:var(--pf-blue)}
 
 main{max-width:980px;margin:24px auto;padding:84px 18px 0 18px}
-h1,h2,h3{font-family:var(--heading-font);color:var(--pf-dark)}
+h1,h2,h3{font-family:var(--heading-font);color:var(--pf-dark);font-weight:700}
+/* Ensure any <strong> inside headings doesn't change the typeface or weight */
+h1 strong,h2 strong,h3 strong{font-weight:inherit;font-family:inherit;color:inherit}
 
 footer{font-size:0.9rem;color:#666;padding:18px}
 
@@ -79,6 +81,10 @@ footer{font-size:0.9rem;color:#666;padding:18px}
 .page-container .toc .toc-toggle::after { content: '\25BC'; display: inline-block; transform: rotate(0deg); transition: transform .15s ease; color: #666; }
 .page-container .toc li.collapsed > .toc-toggle::after { transform: rotate(-90deg); }
 .page-container .content { flex: 1 1 auto; min-width: 0; }
+
+/* Glossary term styling and tooltip */
+.glossary-term{border-bottom:1px dotted rgba(11,61,145,0.6);cursor:help;border-radius:2px;padding:0 2px}
+#glossary-tooltip{pointer-events:none}
 
 @media (max-width: 900px) {
   .page-container.with-toc { flex-direction: column; margin-left: 0; }

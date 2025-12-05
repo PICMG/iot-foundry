@@ -72,8 +72,52 @@
       }
     }
 
-    // append the built list
-    container.appendChild(ul);
+
+      // Group the Use Cases and Requirements section under a single top-level TOC entry
+      // Find the section element with id 'system-requirements' and move all following h2/h3 TOC items
+      // up to (but not including) the element with id 'connection-model'. This avoids relying on
+      // an h2 anchor existing for the start.
+      var startEl = content.querySelector('#system-requirements');
+      var endEl = content.querySelector('#connection-model');
+      if(startEl){
+        var startLi = document.createElement('li');
+        startLi.classList.add('toc-level-1');
+        var startA = document.createElement('a');
+        startA.href = '#system-requirements';
+        startA.textContent = 'Use Cases and Requirements';
+        startLi.appendChild(startA);
+        var sub = document.createElement('ul');
+
+        // walk DOM from startEl.nextSibling until endEl, collecting h2/h3 ids
+        var curEl = startEl.nextElementSibling;
+        var movedAny = false;
+        while(curEl && curEl !== endEl){
+          if(curEl.tagName && (curEl.tagName.toLowerCase() === 'h2' || curEl.tagName.toLowerCase() === 'h3')){
+            var hid = curEl.id || slugify(curEl.textContent || '');
+            // find corresponding li in ul
+            var link = ul.querySelector('a[href="#' + hid + '"]');
+            if(link){
+              var li = link.closest('li');
+              if(li){ sub.appendChild(li); movedAny = true; }
+            }
+          }
+          curEl = curEl.nextElementSibling;
+        }
+        if(movedAny){
+          startLi.appendChild(sub);
+          // insert startLi near top (after intro if present)
+          var insertBefore = ul.firstChild; // default
+          // if intro was inserted, keep Use Cases after intro
+          var first = ul.querySelector('li.toc-level-1');
+          if(first && first.querySelector('a') && first.querySelector('a').textContent === 'Introduction'){
+            insertBefore = first.nextElementSibling;
+          }
+          ul.insertBefore(startLi, insertBefore);
+        }
+      }
+
+      // append the built list
+      container.appendChild(ul);
 
     // add toggles for items that have children
     Array.prototype.forEach.call(container.querySelectorAll('li'), function(li){
