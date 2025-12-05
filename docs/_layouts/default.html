@@ -27,7 +27,14 @@
         <nav class="main-nav">
           <a href="{{ '/' | relative_url }}">Home</a>
           <a href="{{ '/architecture/' | relative_url }}">Architecture</a>
-          <a href="{{ '/governance/' | relative_url }}">Governance</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropbtn" aria-haspopup="true" aria-expanded="false">Governance ▾</button>
+            <ul class="nav-dropdown-menu" role="menu">
+              <li role="none"><a role="menuitem" href="{{ '/governance/code_of_conduct/' | relative_url }}">Code of Conduct</a></li>
+              <li role="none"><a role="menuitem" href="{{ '/governance/IoTFoundry_Contributor_License_Agreement.pdf' | relative_url }}" target="_blank" rel="noopener">License Agreement</a></li>
+              <li role="none"><a role="menuitem" href="{{ '/governance/license/' | relative_url }}">License</a></li>
+            </ul>
+          </div>
           <a href="{{ '/RelatedProjects/' | relative_url }}">Related Projects</a>
           <a href="{{ '/about/' | relative_url }}">About</a>
         </nav>

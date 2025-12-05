@@ -42,6 +42,16 @@ body{
 }
 .main-nav a:hover{color:var(--pf-blue)}
 
+/* Simple dropdown for Governance menu */
+.nav-dropdown{position:relative;display:inline-block}
+.nav-dropbtn{background:none;border:none;color:var(--pf-dark);text-decoration:none;margin-left:18px;font-weight:600;cursor:pointer;font-family:var(--body-font);font-size:1rem}
+.nav-dropbtn:focus{outline:2px solid rgba(11,77,160,0.2);outline-offset:2px}
+.nav-dropdown-menu{position:absolute;left:0;top:calc(100% + 6px);display:none;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.08);list-style:none;padding:6px 0;margin:0;border-radius:6px;min-width:200px;z-index:10000}
+.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{display:block}
+.nav-dropdown-menu li{margin:0}
+.nav-dropdown-menu li a{display:block;padding:8px 16px;color:var(--pf-dark);text-decoration:none;font-weight:600}
+.nav-dropdown-menu li a:hover{background:#f2f6ff}
+
 main{max-width:980px;margin:24px auto;padding:84px 18px 0 18px}
 h1,h2,h3{font-family:var(--heading-font);color:var(--pf-dark);font-weight:700}
 /* Ensure any <strong> inside headings doesn't change the typeface or weight */
@@ -90,4 +100,13 @@ footer{font-size:0.9rem;color:#666;padding:18px}
   .page-container.with-toc { flex-direction: column; margin-left: 0; }
   .page-container .toc { width: 100%; border-right: none; border-bottom: 1px solid #e6e6e6; max-height: none; position: relative; margin-left: 0; }
 }
+
+/* Related Projects: compact badge layout */
+.project-entry{margin-bottom:14px;padding-bottom:6px;border-bottom:1px dashed #eee}
+.project-entry .project-title{font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.project-entry .project-title a{font-weight:700;color:var(--pf-dark);text-decoration:none;margin-right:12px}
+.project-entry .project-title a:hover{text-decoration:underline}
+.project-entry .project-badges{display:flex;align-items:center;justify-content:flex-end;margin-left:auto}
+.project-entry .project-badges img{display:inline-block;vertical-align:middle;height:18px}
+.project-entry .project-description{margin-top:6px;margin-left:0;color:#333}
 }
