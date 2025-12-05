@@ -1,0 +1,45 @@
+:root{
+  --pf-blue: #0b4da0; /* primary blue */
+  --pf-dark: #0b375f; /* dark text/accent */
+  --pf-accent: #004080;
+  --body-font: 'Open Sans', Arial, sans-serif;
+  --heading-font: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html,body{height:100%;}
+body{
+  font-family: var(--body-font);
+  color: #222;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.site-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 12px 20px;
+  background: #fff;
+}
+.brand{display:flex;align-items:center}
+.site-logo{height:48px; width:auto; display:block}
+
+.main-nav a{
+  color: var(--pf-dark);
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:600;
+}
+.main-nav a:hover{color:var(--pf-blue)}
+
+main{max-width:980px;margin:24px auto;padding:0 18px}
+h1,h2,h3{font-family:var(--heading-font);color:var(--pf-dark)}
+
+footer{font-size:0.9rem;color:#666;padding:18px}
+
+/* responsive */
+@media (max-width:720px){
+  .site-header{flex-direction:column;align-items:flex-start}
+  .main-nav{margin-top:8px}
+  .main-nav a{margin-left:8px}
+}
