@@ -1,0 +1,16 @@
+/*
+  Minimal main.scss to avoid importing the Minima theme SCSS and
+  suppress the Dart Sass deprecation warnings during local builds.
+
+  This file intentionally avoids @import "minima" and instead
+  uses a plain CSS @import to include the site stylesheet we maintain
+  at assets/css/site.css.
+*/
+
+@charset "utf-8";
+
+/* Use a CSS @import (not a Sass @import) so Sass does not try to
+   resolve theme partials and emit deprecation warnings. The browser
+   will load this stylesheet when the compiled CSS is served.
+*/
+@import url('css/site.css');
