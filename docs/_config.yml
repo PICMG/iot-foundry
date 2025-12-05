@@ -1,0 +1,12 @@
+title: IoTFoundry
+description: Umbrella architecture and governance for the IoTFoundry project family
+baseurl: ""
+url: "https://PICMG.github.io/iot-foundry"
+theme: minima
+
+permalink: /:path/
+
+collections:
+  architecture:
+    output: true
+    permalink: /architecture/:path/

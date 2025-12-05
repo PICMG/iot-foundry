@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {{ site.baseurl }}
+    {% seo %}
+    <!-- Google Fonts used by PICMG site (fallback to similar fonts if unavailable) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <link rel="icon" href="{{ '/assets/images/iotfoundry.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <div class="brand">
+          <a href="{{ '/' | absolute_url }}" class="brand-link">
+            <img src="{{ '/assets/images/iotfoundry.svg' | relative_url }}" alt="IoTFoundry" class="site-logo" />
+            <div class="site-text">
+              <span class="site-title">IoTFoundry</span>
+              <span class="site-tagline">Industrial IoT, Forged by Open Source</span>
+            </div>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/architecture/' | relative_url }}">Architecture</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropbtn" aria-haspopup="true" aria-expanded="false">Governance ▾</button>
+            <ul class="nav-dropdown-menu" role="menu">
+              <li role="none"><a role="menuitem" href="{{ '/governance/code_of_conduct/' | relative_url }}">Code of Conduct</a></li>
+              <li role="none"><a role="menuitem" href="{{ '/governance/IoTFoundry_Contributor_License_Agreement.pdf' | relative_url }}" target="_blank" rel="noopener">License Agreement</a></li>
+              <li role="none"><a role="menuitem" href="{{ '/governance/license/' | relative_url }}">License</a></li>
+            </ul>
+          </div>
+          <a href="{{ '/RelatedProjects/' | relative_url }}">Related Projects</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+        </nav>
+      </div>
+      <hr/>
+    </header>
+    <main>
+      {% if page.url == '/architecture/' or page.collection == 'architecture' %}
+      <div class="page-container with-toc">
+        <aside class="toc" id="toc">
+          <div class="toc-title">On this page</div>
+          <nav id="toc-content"></nav>
+        </aside>
+        <div class="content" id="page-content">
+          {{ content }}
+        </div>
+      </div>
+      <script>window.GLOSSARY = {{ site.data.glossary | jsonify }};</script>
+      <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
+      <script src="{{ '/assets/js/glossary.js' | relative_url }}"></script>
+      {% else %}
+      <div class="content" id="page-content">
+        {{ content }}
+      </div>
+      {% endif %}
+    </main>
+    <footer>
+      <hr/>
+      <p>See <a href="{{ '/' | relative_url }}">repository</a> for license and governance documents.</p>
+    </footer>
+  </body>
+</html>
