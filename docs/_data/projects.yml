@@ -1,0 +1,4 @@
+- name: PICMG IoT Firmware
+  url: https://github.com/PICMG/iot_firmware
+  description: Reference MCTP and PLDM firmware implementations maintained by PICMG.
+  status: reference

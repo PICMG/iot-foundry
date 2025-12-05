@@ -9,7 +9,7 @@ This repository is the umbrella specification and governance repository for the 
 - the contributor agreement, contribution workflow, and the project's code of conduct,
 - links and pointers to each sub-project repository where implementation code is maintained.
 
-If you are looking for implementation code (libraries, examples, or firmware), please follow the links in the `Related projects` section — each implementation is hosted in its own repository under the IoTFoundry umbrella.
+If you are looking for implementation code (libraries, examples, or firmware), please visit the hosted site or the `Related Projects` page — each implementation is hosted in its own repository under the IoTFoundry umbrella.
 
 ## Table of contents
 

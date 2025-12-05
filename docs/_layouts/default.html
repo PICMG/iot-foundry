@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {{ site.baseurl }}
+    {% seo %}
+    <!-- Google Fonts used by PICMG site (fallback to similar fonts if unavailable) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <div class="brand">
+          <a href="{{ '/' | absolute_url }}">
+            <img src="{{ '/assets/images/picmg-logo.png' | relative_url }}" alt="PICMG / IoTFoundry" class="site-logo" />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/architecture/' | relative_url }}">Architecture</a>
+          <a href="{{ '/governance/' | relative_url }}">Governance</a>
+          <a href="{{ '/RelatedProjects/' | relative_url }}">Related Projects</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+        </nav>
+      </div>
+      <hr/>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <hr/>
+      <p>© PICMG. See <a href="{{ '/' | relative_url }}">repository</a> for license and governance documents.</p>
+    </footer>
+  </body>
+</html>
