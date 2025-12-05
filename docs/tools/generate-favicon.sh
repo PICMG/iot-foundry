@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-SRC="${1:-docs/assets/images/picmg-logo.png}"
+SRC="${1:-docs/assets/images/iotfoundry.svg}"
 OUT="${2:-docs/favicon.ico}"
 
 if ! command -v convert >/dev/null 2>&1; then

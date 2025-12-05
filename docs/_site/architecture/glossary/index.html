@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glossary - IoTFoundry</title>
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Glossary | IoTFoundry</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Glossary" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Umbrella architecture and governance for the IoTFoundry project family" />
+<meta property="og:description" content="Umbrella architecture and governance for the IoTFoundry project family" />
+<link rel="canonical" href="http://0.0.0.0:4000/architecture/glossary/" />
+<meta property="og:url" content="http://0.0.0.0:4000/architecture/glossary/" />
+<meta property="og:site_name" content="IoTFoundry" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Glossary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Umbrella architecture and governance for the IoTFoundry project family","headline":"Glossary","url":"http://0.0.0.0:4000/architecture/glossary/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Google Fonts used by PICMG site (fallback to similar fonts if unavailable) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="icon" href="/assets/images/iotfoundry.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <div class="brand">
+          <a href="http://0.0.0.0:4000/" class="brand-link">
+            <img src="/assets/images/iotfoundry.svg" alt="IoTFoundry" class="site-logo" />
+            <div class="site-text">
+              <span class="site-title">IoTFoundry</span>
+              <span class="site-tagline">Industrial IoT, Forged by Open Source</span>
+            </div>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/architecture/">Architecture</a>
+          <a href="/governance/">Governance</a>
+          <a href="/RelatedProjects/">Related Projects</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+      <hr/>
+    </header>
+    <main>
+      
+      <div class="page-container with-toc">
+        <aside class="toc" id="toc">
+          <div class="toc-title">On this page</div>
+          <nav id="toc-content"></nav>
+        </aside>
+        <div class="content" id="page-content">
+          <h2 id="glossary-of-terms"><strong>Glossary of Terms</strong></h2>
+
+<p>This section contains a glossary of terms as they are used in this project.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Binary-Encoding</strong></td>
+      <td>A compact data format used to reduce transmission and storage overhead, suitable for resource-constrained devices.</td>
+    </tr>
+    <tr>
+      <td><strong>Effecter</strong></td>
+      <td>A controllable endpoint resource defined in PLDM, such as a GPIO or actuator.</td>
+    </tr>
+    <tr>
+      <td><strong>Endpoint</strong></td>
+      <td>A microcontroller-based device that communicates using MCTP and PLDM, exposing telemetry and control interfaces.</td>
+    </tr>
+    <tr>
+      <td><strong>Event-Driven Communication</strong></td>
+      <td>A feature that allows endpoints to send messages, when triggered by a local event.</td>
+    </tr>
+    <tr>
+      <td><strong>Firmware Update</strong></td>
+      <td>A method of applying firmware changes to endpoint devices.</td>
+    </tr>
+    <tr>
+      <td><strong>GPIO (General-Purpose Input/Output)</strong></td>
+      <td>A type of hardware control interface consisting of digital inputs and/or outputs.</td>
+    </tr>
+    <tr>
+      <td><strong>Human-Machine Interface (HMI)</strong></td>
+      <td>A user interface that allows technicians or administrators to interact with the system.</td>
+    </tr>
+    <tr>
+      <td><strong>MCTP (Management Component Transport Protocol)</strong></td>
+      <td>A lightweight communication protocol used to send messages between devices like microcontrollers and Linux systems. It supports small packets, error checking, and message reassembly, making it reliable and efficient for industrial and embedded systems</td>
+    </tr>
+    <tr>
+      <td><strong>PDR (Platform Descriptor Record)</strong></td>
+      <td>A binary-encoded data structure that describes an endpoint’s capabilities, commands, and telemetry interfaces.</td>
+    </tr>
+    <tr>
+      <td><strong>PLDM (Platform Level Data Model)</strong></td>
+      <td>A protocol layered over MCTP that defines structured commands, responses, and data models for platform management.</td>
+    </tr>
+    <tr>
+      <td><strong>Redfish</strong></td>
+      <td>A DMTF-defined RESTful API and schema for system-level management, extended for industrial IoT by PICMG.</td>
+    </tr>
+    <tr>
+      <td><strong>Resource-Constrained Device</strong></td>
+      <td>A device with limited memory and processing power, such as a microcontroller, for which binary-encoded PDRs are optimized.</td>
+    </tr>
+    <tr>
+      <td><strong>Retransmission Policy</strong></td>
+      <td>A mechanism of a Communication to ensure reliable delivery of messages in noisy environments.</td>
+    </tr>
+    <tr>
+      <td><strong>Sensor Threshold Crossing</strong></td>
+      <td>A condition that occurs when a sensor value exceeds a defined limit.</td>
+    </tr>
+    <tr>
+      <td><strong>Socket</strong></td>
+      <td>A software interface that enables communication between applications. In Linux, sockets allow user-space programs to send and receive data using protocols like TCP, UDP, or MCTP.</td>
+    </tr>
+    <tr>
+      <td><strong>Telemetry</strong></td>
+      <td>Data collected from endpoint devices, such as sensor readings and system status, used for monitoring and orchestration.</td>
+    </tr>
+    <tr>
+      <td><strong>User-Space</strong></td>
+      <td>The portion of a computer’s operating system where applications and user-level processes run, separate from the kernel.</td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+      </div>
+      <script src="/assets/js/toc.js"></script>
+      
+    </main>
+    <footer>
+      <hr/>
+      <p>See <a href="/">repository</a> for license and governance documents.</p>
+    </footer>
+  </body>
+</html>

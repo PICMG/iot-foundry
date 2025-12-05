@@ -1,9 +1,3 @@
----
-title: Architecture Overview
-layout: default
-collection: architecture
----
-
 # Architecture Overview
 
 This page summarizes the IoTFoundry architecture and key components and links to detailed pages that describe scope, use cases, the connection model, and reference materials.

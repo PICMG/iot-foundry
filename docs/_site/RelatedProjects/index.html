@@ -25,14 +25,19 @@
     <!-- Google Fonts used by PICMG site (fallback to similar fonts if unavailable) -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/site.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/images/iotfoundry.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
       <div class="site-header">
         <div class="brand">
-          <a href="http://0.0.0.0:4000/">
-            <img src="/assets/images/picmg-logo.png" alt="PICMG / IoTFoundry" class="site-logo" />
+          <a href="http://0.0.0.0:4000/" class="brand-link">
+            <img src="/assets/images/iotfoundry.svg" alt="IoTFoundry" class="site-logo" />
+            <div class="site-text">
+              <span class="site-title">IoTFoundry</span>
+              <span class="site-tagline">Industrial IoT, Forged by Open Source</span>
+            </div>
           </a>
         </div>
         <nav class="main-nav">
@@ -46,7 +51,9 @@
       <hr/>
     </header>
     <main>
-      <h2 id="related-projects">Related Projects</h2>
+      
+      <div class="content" id="page-content">
+        <h2 id="related-projects">Related Projects</h2>
 
 <p>Below are known implementation repositories associated with IoTFoundry.</p>
 
@@ -56,10 +63,12 @@
 
 <p>If you maintain a repository that should be listed here, please open a pull request adding it to <code class="language-plaintext highlighter-rouge">_data/projects.yml</code>.</p>
 
+      </div>
+      
     </main>
     <footer>
       <hr/>
-      <p>© PICMG. See <a href="/">repository</a> for license and governance documents.</p>
+      <p>See <a href="/">repository</a> for license and governance documents.</p>
     </footer>
   </body>
 </html>

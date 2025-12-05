@@ -20,9 +20,19 @@ body{
   justify-content:space-between;
   padding: 12px 20px;
   background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
-.brand{display:flex;align-items:center}
-.site-logo{height:48px; width:auto; display:block}
+.brand{display:flex;align-items:center;flex:0 0 auto}
+.site-logo{height:56px; width:auto; display:block}
+.brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.site-text{display:flex;flex-direction:column;align-items:flex-start}
+.site-title{font-family:var(--heading-font);font-size:1.4rem;margin-left:0;color:var(--pf-dark);font-weight:800;line-height:1;white-space:nowrap}
+.site-tagline{font-family:var(--body-font);font-size:0.9rem;color:#616161;margin-top:2px;font-weight:400}
 
 .main-nav a{
   color: var(--pf-dark);
@@ -32,7 +42,7 @@ body{
 }
 .main-nav a:hover{color:var(--pf-blue)}
 
-main{max-width:980px;margin:24px auto;padding:0 18px}
+main{max-width:980px;margin:24px auto;padding:84px 18px 0 18px}
 h1,h2,h3{font-family:var(--heading-font);color:var(--pf-dark)}
 
 footer{font-size:0.9rem;color:#666;padding:18px}
@@ -42,4 +52,36 @@ footer{font-size:0.9rem;color:#666;padding:18px}
   .site-header{flex-direction:column;align-items:flex-start}
   .main-nav{margin-top:8px}
   .main-nav a{margin-left:8px}
+  /* On very small screens, allow the brand to stack to avoid overflow */
+  .brand-link{gap:8px}
+  .site-title{font-size:1.05rem}
+  .site-tagline{font-size:0.85rem}
+}
+
+/* Hide the title and tagline on very small screens to preserve header space */
+@media (max-width:420px){
+  .site-text{display:none}
+}
+
+/* Table of Contents layout for architecture pages */
+.page-container.with-toc { display: flex; gap: 12px; align-items: flex-start; /* move TOC further left to reduce visible gutter */ margin-left: -135px; }
+  .page-container .toc { width: 220px; flex: 0 0 220px; position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; padding: 6px 8px; border-right: 1px solid #e6e6e6; margin-left: 0; }
+.page-container .toc .toc-title { font-weight: 700; margin-bottom: 8px; }
+.page-container .toc nav ul { list-style: none; padding-left: 4px; margin: 0; }
+.page-container .toc nav ul ul { padding-left: 12px; }
+.page-container .toc nav li { margin: 6px 0; }
+.page-container .toc nav li.toc-level-2 > a { padding-left: 6px; }
+.page-container .toc nav li.toc-level-3 > a { padding-left: 18px; font-size: 13px; color: #073366; }
+.page-container .toc nav a { color: #0b3d91; text-decoration: none; font-size: 14px; display: inline-block; }
+.page-container .toc nav a.active { font-weight: 600; }
+.page-container .toc .toc-toggle { cursor: pointer; border: none; background: transparent; padding: 0 6px 0 0; font-size: 12px; line-height: 1; }
+.page-container .toc li.collapsed > ul { display: none; }
+.page-container .toc .toc-toggle::after { content: '\25BC'; display: inline-block; transform: rotate(0deg); transition: transform .15s ease; color: #666; }
+.page-container .toc li.collapsed > .toc-toggle::after { transform: rotate(-90deg); }
+.page-container .content { flex: 1 1 auto; min-width: 0; }
+
+@media (max-width: 900px) {
+  .page-container.with-toc { flex-direction: column; margin-left: 0; }
+  .page-container .toc { width: 100%; border-right: none; border-bottom: 1px solid #e6e6e6; max-height: none; position: relative; margin-left: 0; }
+}
 }
