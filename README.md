@@ -94,14 +94,10 @@ This repository is covered by the `LICENSE` in the repository root. Community ex
 
 ## Resources
 
-- DMTF MCTP & PLDM specifications (see `doc/` for local references)
+- DMTF MCTP & PLDM specifications (see `doc/` for local references):
+	- [MCTP Base Specification (DMTF)](https://www.dmtf.org/documents/pmci/management-component-transport-protocol-mctp-base-specification-131)
+	- [MCTP Serial Transport Binding Specification (DMTF)](https://www.dmtf.org/documents/pmci/mctp-serial-transport-binding-specification-100)
+	- [PLDM Specification (DMTF)](https://www.dmtf.org/sites/default/files/standards/documents/DSP0240_1.2.0.pdf)
 - PICMG IoT Firmware Reference Code: https://github.com/PICMG/iot_firmware
 - Linux MCTP Documentation: https://docs.kernel.org/networking/mctp.html
 
----
-
-If you'd like, I can now:
-
-- add a short architecture diagram under `doc/`,
-- expand `CONTRIBUTING.md` to include a formal CLA flow and checklist for new sub-projects, or
-- add a `Related projects` section with links to known implementation repositories.
