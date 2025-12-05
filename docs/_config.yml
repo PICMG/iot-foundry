@@ -1,6 +1,6 @@
 title: IoTFoundry
 description: Umbrella architecture and governance for the IoTFoundry project family
-baseurl: ""
+baseurl: "/iot-foundry"
 url: "https://PICMG.github.io/iot-foundry"
 theme: minima
 
