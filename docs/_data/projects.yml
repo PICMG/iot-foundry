@@ -16,12 +16,6 @@
   description: Implementation of an IoTFoundry-compliant endpoint for ATMega microcontrollers.
   status: active
 
-- name: IoTorch
-  url: https://github.com/PICMG/IoTorch
-  repo: PICMG/IoTorch
-  description: This project will be renamed or removed and its contents will be refactored into several new projects.
-  status: in progress
-
 - name: PICMG IoT Firmware
   url: https://github.com/PICMG/iot_firmware
   repo: PICMG/iot_firmware
