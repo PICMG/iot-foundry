@@ -4,10 +4,16 @@
   description: A Linux library and user space application to facilite rapid deployment of MCTP-Over-Serial deployments using Linux.
   status: active
 
-- name: MCTP-Over-Serial library for Arduino
-  url: https://www.github.com/PICMG/mctp-serial-arduino
-  repo: PICMG/mctp-serial-arduino
-  description: An Arduino library for MCTP-Over-Serial.
+- name: IoTFoundry Endpoint Template Code
+  url: https://www.github.com/PICMG/iot-foundry-endpoint
+  repo: PICMG/iot-foundry-endpoint
+  description: Template code for building IoTFoundry-compliant endpoints.
+  status: active
+
+- name: IoTFoundry Endpoint for ATMega MCUs
+  url: https://www.github.com/PICMG/iot-foundry-atmega-endpoint
+  repo: PICMG/iot-foundry-atmega-endpoint
+  description: Implementation of an IoTFoundry-compliant endpoint for ATMega microcontrollers.
   status: active
 
 - name: IoTorch
