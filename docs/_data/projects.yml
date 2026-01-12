@@ -16,6 +16,12 @@
   description: Implementation of an IoTFoundry-compliant endpoint for ATMega microcontrollers.
   status: active
 
+- name: IoTFoundry Endpoint for Linux and Embedded Linux
+  url: https://www.github.com/PICMG/iot-foundry-linux-endpoint
+  repo: PICMG/iot-foundry-linux-endpoint
+  description: Implementation of an IoTFoundry-compliant endpoint for Linux and Embedded Linux.
+  status: active
+
 - name: PICMG IoT Firmware
   url: https://github.com/PICMG/iot_firmware
   repo: PICMG/iot_firmware
