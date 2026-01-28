@@ -16,6 +16,12 @@
   description: Implementation of an IoTFoundry-compliant endpoint for ATMega microcontrollers.
   status: active
 
+- name: IoTFoundry Endpoint for Zephyr RTOS
+  url: https://www.github.com/PICMG/iot-foundry-zephyr-endpoint
+  repo: PICMG/iot-foundry-zephyr-endpoint
+  description: Implementation of an IoTFoundry-compliant endpoint for Zephyr RTOS.
+  status: active
+
 - name: IoTFoundry Endpoint for Linux and Embedded Linux
   url: https://www.github.com/PICMG/iot-foundry-linux-endpoint
   repo: PICMG/iot-foundry-linux-endpoint
