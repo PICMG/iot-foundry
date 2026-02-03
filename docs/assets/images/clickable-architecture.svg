@@ -6914,6 +6914,11 @@
 	<a href="https://github.com/PICMG/iot-foundry-pldm-agent" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-pldm_agent-blue?logo=github" x="1100" y="233" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
 	<a href="https://github.com/PICMG/mctp-serial-linux" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-mctp_linux-blue?logo=github" x="1100" y="283" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
 
+	<a href="https://github.com/DMTF" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-DMTF--Redfish-blue?logo=github" x="1747" y="183" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+	<a href="https://github.com/PICMG/iot_configurator" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-IoT--Configurator-blue?logo=github" x="1747" y="233" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+	<a href="https://github.com/PICMG/iot_builder" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-IoT%20Builder-blue?logo=github" x="1747" y="283" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+	<a href="https://redfish.dmtf.org/redfish/schema_index" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-Schema-blue?logo=github" x="1747" y="333" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+
 		<image href="https://img.shields.io/badge/github-tbd-gray?logo=github" x="1950" y="939" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/>
 	<a href="https://github.com/PICMG/iot-foundry-atmega-endpoint"><image href="https://img.shields.io/badge/github-ATMega%20Endpoint-blue?logo=github" x="2145" y="939" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
 
