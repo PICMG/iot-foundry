@@ -5,6 +5,8 @@ layout: default
 
 ## Related Projects
 
+{% include diagram.html %}
+
 Below are known implementation repositories associated with IoTFoundry.
 
 {% for p in site.data.projects %}
