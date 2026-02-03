@@ -6910,6 +6910,10 @@
 	<a href="https://github.com/openbmc/libmctp"><image href="https://img.shields.io/badge/github-libmctp-blue?logo=github" x="1436" y="989" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
 	<a href="https://github.com/zephyrproject-rtos/zephyr"><image href="https://img.shields.io/badge/github-zephyrproject-blue?logo=github" x="1436" y="1039" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
 
+	<a href="https://github.com/PICMG/redfish_server_template" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-redfish_server-blue?logo=github" x="1100" y="183" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+	<a href="https://github.com/PICMG/iot-foundry-pldm-agent" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-pldm_agent-blue?logo=github" x="1100" y="233" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+	<a href="https://github.com/PICMG/mctp-serial-linux" target="_blank" rel="noopener"><image href="https://img.shields.io/badge/github-mctp_linux-blue?logo=github" x="1100" y="283" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
+
 		<image href="https://img.shields.io/badge/github-tbd-gray?logo=github" x="1950" y="939" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/>
 	<a href="https://github.com/PICMG/iot-foundry-atmega-endpoint"><image href="https://img.shields.io/badge/github-ATMega%20Endpoint-blue?logo=github" x="2145" y="939" height="40" preserveAspectRatio="xMinYMid meet" style="cursor:pointer"/></a>
 
